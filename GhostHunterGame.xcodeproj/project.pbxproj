@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8439EC862BD541A000D75841 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8439EC842BD541A000D75841 /* pew-pew-lei.caf */; };
+		8439EC872BD541A000D75841 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8439EC852BD541A000D75841 /* background-music-aac.caf */; };
+		8439EC8B2BD542AD00D75841 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439EC8A2BD542AD00D75841 /* GameOverScene.swift */; };
+		8439EC8F2BD5571300D75841 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439EC8E2BD5571300D75841 /* CGPoint+Extension.swift */; };
+		8439EC932BD557DD00D75841 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439EC922BD557DD00D75841 /* CGFloat+Extension.swift */; };
+		8439EC952BD5582400D75841 /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439EC942BD5582400D75841 /* PhysicsCategory.swift */; };
 		84B802142BD3FD120015067F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B802132BD3FD120015067F /* AppDelegate.swift */; };
 		84B802162BD3FD120015067F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 84B802152BD3FD120015067F /* GameScene.sks */; };
 		84B802182BD3FD120015067F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 84B802172BD3FD120015067F /* Actions.sks */; };
@@ -38,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8439EC842BD541A000D75841 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		8439EC852BD541A000D75841 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		8439EC8A2BD542AD00D75841 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		8439EC8E2BD5571300D75841 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		8439EC922BD557DD00D75841 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		8439EC942BD5582400D75841 /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
 		84B802102BD3FD120015067F /* GhostHunterGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GhostHunterGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B802132BD3FD120015067F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B802152BD3FD120015067F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -79,6 +91,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8439EC832BD5419100D75841 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8439EC852BD541A000D75841 /* background-music-aac.caf */,
+				8439EC842BD541A000D75841 /* pew-pew-lei.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		8439EC8C2BD556E400D75841 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8439EC832BD5419100D75841 /* Sounds */,
+				84B802202BD3FD130015067F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8439EC8D2BD556F000D75841 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				84B802192BD3FD120015067F /* GameScene.swift */,
+				8439EC8A2BD542AD00D75841 /* GameOverScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8439EC902BD5572200D75841 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8439EC8E2BD5571300D75841 /* CGPoint+Extension.swift */,
+				8439EC922BD557DD00D75841 /* CGFloat+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8439EC912BD5573300D75841 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84B8021B2BD3FD120015067F /* GameViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8439EC962BD5583800D75841 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8439EC942BD5582400D75841 /* PhysicsCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		84B802072BD3FD120015067F = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +169,12 @@
 				84B802132BD3FD120015067F /* AppDelegate.swift */,
 				84B802152BD3FD120015067F /* GameScene.sks */,
 				84B802172BD3FD120015067F /* Actions.sks */,
-				84B802192BD3FD120015067F /* GameScene.swift */,
-				84B8021B2BD3FD120015067F /* GameViewController.swift */,
+				8439EC962BD5583800D75841 /* Models */,
+				8439EC902BD5572200D75841 /* Extensions */,
+				8439EC8D2BD556F000D75841 /* Scenes */,
+				8439EC912BD5573300D75841 /* ViewControllers */,
+				8439EC8C2BD556E400D75841 /* Resources */,
 				84B8021D2BD3FD120015067F /* Main.storyboard */,
-				84B802202BD3FD130015067F /* Assets.xcassets */,
 				84B802222BD3FD130015067F /* LaunchScreen.storyboard */,
 			);
 			path = GhostHunterGame;
@@ -236,10 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B8021F2BD3FD120015067F /* Main.storyboard in Resources */,
+				8439EC872BD541A000D75841 /* background-music-aac.caf in Resources */,
 				84B802162BD3FD120015067F /* GameScene.sks in Resources */,
 				84B802212BD3FD130015067F /* Assets.xcassets in Resources */,
 				84B802242BD3FD130015067F /* LaunchScreen.storyboard in Resources */,
 				84B802182BD3FD120015067F /* Actions.sks in Resources */,
+				8439EC862BD541A000D75841 /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +334,11 @@
 			files = (
 				84B8021A2BD3FD120015067F /* GameScene.swift in Sources */,
 				84B8021C2BD3FD120015067F /* GameViewController.swift in Sources */,
+				8439EC932BD557DD00D75841 /* CGFloat+Extension.swift in Sources */,
+				8439EC8B2BD542AD00D75841 /* GameOverScene.swift in Sources */,
+				8439EC8F2BD5571300D75841 /* CGPoint+Extension.swift in Sources */,
 				84B802142BD3FD120015067F /* AppDelegate.swift in Sources */,
+				8439EC952BD5582400D75841 /* PhysicsCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
